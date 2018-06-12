@@ -1,1 +1,39 @@
 // Specific CSS for your home-page
+
+.banner {
+  height: 100vh;
+  min-height: 400px;
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top:0;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 6px;
+    padding-top: 20px;
+    font-size: 35px;
+
+  }
+
+  p {
+    color: white;
+    text-align:center;
+    font-size: 40px;
+    text-shadow: 0 1px 3px rgba(58, 57, 57, 0.8);
+    font-weight: 300;
+    margin-top: 100px;
+    // background-color: black;
+    // padding: 10px;
+    // width: 40%;
+    // align-content: center;
+  }
+
+  img {
+    opacity: 0.8;
+  }
+
+}
+

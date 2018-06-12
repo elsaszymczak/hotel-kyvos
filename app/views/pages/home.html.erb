@@ -1,2 +1,8 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('<%= image_path 'home.jpg' %>');">
+    <h1>KYVOS</h1>
+    <%= render 'shared/navbar' %>
+    <p>Partagez une véritable expérience de sommeil</p>
+    <%= link_to "Reservation" bookings_new%>
+
+  </div>
+
