@@ -1,8 +1,15 @@
-  <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('<%= image_path 'home.jpg' %>');">
-    <h1>KYVOS</h1>
-    <%= render 'shared/navbar' %>
-    <p>Partagez une véritable expérience de sommeil</p>
-    <%= link_to "Reservation" bookings_new%>
-
+<%= render "shared/banner" %>
+<div class="wrapper">
+  <div class="container">
+    <div class="selection">
+      <h3>Découvrez nos offres</h3>
+      <div class="row">
+          <% rooms = Room.all %>
+          <% rooms.each do |room| %>
+            <%= render "shared/card", room: room  %>
+          <% end %>
+      </div>
+    </div>
   </div>
+</div>
 

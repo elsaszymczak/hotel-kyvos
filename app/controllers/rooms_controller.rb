@@ -1,22 +1,9 @@
 class RoomsController < ApplicationController
   def index
+    @rooms = Room.all
   end
 
   def show
-  end
-
-  def new
-  end
-
-  def create
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
+    @room = Room.find(params[:id])
   end
 end
