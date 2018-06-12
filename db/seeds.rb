@@ -9,7 +9,7 @@ puts "cleaning database"
 
 Room.destroy_all
 
-puts "Creating 3 rooms"
+puts "Creating rooms"
 standard = Room.new(
   name: "Chambre standard",
   price: 300,
@@ -34,4 +34,19 @@ family = Room.new(
 )
 family.save!
 
-puts "#{Room.all}"
+sailing = Room.new(
+  name: "Séjour Kyvos Sailing Race",
+  price: 545,
+  capacity: 4,
+  photo: "https://kyvos-53.webself.net/file/si684429/Cubes-fi10991167x1000.png"
+)
+sailing.save
+
+biking = Room.new(
+  name: "Une étape dans la course !",
+  price: 545,
+  capacity: 2,
+  photo: "https://preview.ibb.co/mcDAaJ/tour_de_france.png"
+)
+biking.save
+

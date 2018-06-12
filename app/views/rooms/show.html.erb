@@ -1,2 +1,19 @@
-<h1>Rooms#show</h1>
-<p>Find me in app/views/rooms/show.html.erb</p>
+<div class="banner in-show" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= @room.photo %>);background-position: center;">
+  <div class="banner-content">
+    <h1><%= @room.name %></h1>
+   <!-- if user is the creator of the room : -->
+      <%= link_to "Réserver", new_room_booking_path(@room), class: "btn btn-primary button-black" %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="room">
+    <div class="camp">
+      <div class="heading">
+        <h2>Description de la chambre</h2>
+      </div>
+      <div id="price">
+        <%= @room.price %>€
+      </div>
+  </div>
+</div>

@@ -1,10 +1,15 @@
-<%= render "shared/navbar" %>
+<%= render "shared/banner-pages" %>
 <div class="wrapper">
   <div class="container">
-    <h3>Découvrez nos offres</h3>
-    <% @rooms.each do |room| %>
-      <%= render "shared/card", room: room %>
-    <% end %>
+    <div class="rooms">
+      <h3>Découvrez nos offres</h3>
+      <div class="row">
+        <% @rooms.each do |room| %>
+          <%= render "shared/card", room: room %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>
+
 

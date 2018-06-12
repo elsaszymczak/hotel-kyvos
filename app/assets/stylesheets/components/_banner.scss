@@ -1,7 +1,7 @@
 // Specific CSS for your home-page
 
 .banner {
-  height: 70vh;
+  height: 100vh;
   min-height: 400px;
   background-size: cover!important;
   background-repeat: no-repeat;
@@ -14,19 +14,15 @@
     letter-spacing: 6px;
     padding-top: 20px;
     font-size: 35px;
+    font-family:'Gruppo',
 
   }
-
-
-  img {
-    opacity: 0.8;
-  }
-
 }
 
 .banner-content {
   display: flex;
   flex-direction: column;
+  margin-top: 150px;
 
   p {
     color: white;
@@ -34,7 +30,6 @@
     font-size: 40px;
     text-shadow: 0 1px 3px rgba(58, 57, 57, 0.8);
     font-weight: 300;
-    margin-top: 100px;
     margin-bottom: 50px;
     // background-color: black;
     // padding: 10px;
@@ -43,5 +38,29 @@
   }
 }
 
+
+.banner-pages {
+  height: 140px;
+  background-size: cover!important;
+  background-repeat: no-repeat;
+  margin-top:0;
+
+  h1 {
+    color: white;
+    text-align: center;
+    margin-top: 0;
+    letter-spacing: 6px;
+    padding-top: 20px;
+    font-size: 35px;
+    font-family:'Gruppo',
+
+  }
+
+}
+
+.in-show {
+  height: 400px;
+  margin-bottom: 30px;
+}
 
 

@@ -1,14 +1,18 @@
 <%= render "shared/banner" %>
 <div class="wrapper">
   <div class="container">
-    <div class="selection">
-      <h3>Découvrez nos offres</h3>
-      <div class="row">
-          <% rooms = Room.all %>
-          <% rooms.each do |room| %>
-            <%= render "shared/card", room: room  %>
-          <% end %>
-      </div>
+    <div class="slogan">
+      <%= image_tag 'logo.png' %>
+      <p>Riches d'expériences fortes et variées, nous sommes fières de vous proposer un établissement extraordinaire, pour partager un moment hors du temps, afin de vous permettre de vous recentrer sur vous, et sur votre environnement.</p>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper-image">
+  <div class="container">
+    <div class="sailing">
+      <h3>Participez au soft opening du Kyvos lors de <br> la Kyvos Sailing Race</h3>
+      <p>En avant première, profiter d'un confort exceptionnel pour assister dans les meilleurs <br>  conditions à la plus grande régate de France !</p>
+      <%= link_to "En savoir plus", rooms_path, class: "btn btn-primary button-black" %>
     </div>
   </div>
 </div>

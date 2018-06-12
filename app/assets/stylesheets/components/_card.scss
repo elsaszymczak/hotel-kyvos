@@ -8,14 +8,11 @@
 
   &:hover .image {
     opacity: 0.8;
-    text-decoration: none;
   }
+}
 
-  &:hover .card-category {
-    opacity: 1;
-  }
-
-
+a:hover {
+  text-decoration: none;
 }
 
 .image {
