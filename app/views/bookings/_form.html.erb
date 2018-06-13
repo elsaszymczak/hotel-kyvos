@@ -1,0 +1,5 @@
+<%= simple_form_for [room, booking] do |f| %>
+  <%= f.input :starts_at, as: :string, required: false, input_html: {id: "range_start"} %>
+  <%= f.input :ends_at, as: :string, required: false, input_html: {id: "range_end"} %>
+  <%= f.submit "Confirm booking", id: "sweet-alert-trainee", class: "btn btn-primary button-black" %>
+<% end %>
