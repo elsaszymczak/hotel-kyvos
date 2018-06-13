@@ -1,0 +1,8 @@
+function refreshForm(newForm) {
+  const innerForm = document.getElementById("inner-form");
+  innerForm.innerHTML = newForm;
+}
+
+<% if @booking.errors.any? %>
+  refreshForm('<%= j render "bookings/form", room: @room, booking: @booking %>');
+<% end %>

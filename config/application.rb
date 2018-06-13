@@ -8,6 +8,10 @@ Bundler.require(*Rails.groups)
 
 module HotelKyvos
   class Application < Rails::Application
+    class Application < Rails::Application
+      config.action_view.embed_authenticity_token_in_remote_forms = true
+      # [...]
+    end
     config.generators do |generate|
           generate.assets false
           generate.helper false
