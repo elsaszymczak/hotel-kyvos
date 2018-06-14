@@ -9,6 +9,7 @@
     "sweetalert": "^2.1.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "2.11.2"
+    "webpack-cli": "^3.0.4",
+    "webpack-dev-server": "^2.11.2"
   }
 }
